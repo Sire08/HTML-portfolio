@@ -1,0 +1,233 @@
+/* ---------- Global ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+/* ---------- Header (background image) ---------- */
+header {
+    /* To use a real photo, replace with: url('images/header.jpg') */
+    background-image: linear-gradient(rgba(15, 40, 80, 0.85), rgba(15, 40, 80, 0.85)),
+                      url('images/header.jpg');
+    background-color: #0f2850;   /* fallback if the image is missing */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px 40px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #cfe0ff;
+    margin-bottom: 25px;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+    margin-bottom: 25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #f5a623;
+    color: #0f2850;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-block;
+    background-color: #f5a623;
+    color: #0f2850;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+/* ---------- Sections ---------- */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #dde3ee;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 25px 0;
+}
+
+h2 {
+    font-size: 28px;
+    color: #0f2850;
+    border-bottom: 3px solid #f5a623;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #0f2850;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* ---------- About ---------- */
+.about-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #0f2850;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #f5a623;
+}
+
+.about-box > div:last-child {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* ---------- Skills (Flexbox) ---------- */
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list li {
+    background-color: #0f2850;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+/* ---------- Projects (Flexbox cards) ---------- */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 250px;
+    background-color: #f4f7fb;
+    border: 2px solid #dde3ee;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Contact form ---------- */
+form {
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    border: 1px solid #b8c2d6;
+    border-radius: 6px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f5a623;
+}
+
+form .btn {
+    margin-top: 18px;
+    background-color: #0f2850;
+    color: #fff;
+}
+
+form .btn:hover {
+    background-color: #f5a623;
+    color: #0f2850;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #0f2850;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
